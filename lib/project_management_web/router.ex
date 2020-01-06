@@ -25,5 +25,6 @@ defmodule ProjectManagementWeb.Router do
 
     # We want to be read-only, so allow only index and show
     resources("/projects", ProjectController, only: [:index, :show])
+    resources("/documents", DocumentController, only: [:index, :show])
   end
 end
